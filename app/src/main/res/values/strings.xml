@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SMS Bulk</string>
+    <string name="title_activity_smsbulk_navigation">SMS Bulk</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SMS Bulk</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="send_again">Send failed messages again</string>
+    <string name="delete_all_logs">Delete all logs</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.3"
+            android:textSize="18sp"
+            android:text="No."
+            android:id="@+id/logs_data_snNumber"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/logs_data_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile Number"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:paddingLeft="20dp"/>
+        <ImageView
+            android:id="@+id/logs_data_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_close_black_24dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
