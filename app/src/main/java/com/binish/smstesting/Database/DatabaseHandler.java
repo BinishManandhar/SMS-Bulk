@@ -57,7 +57,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + CSV_name + " TEXT,"
                 + CSV_date + " TEXT" + ")";
         db.execSQL(createTableCsv);
-
     }
 
     @Override

@@ -79,7 +79,7 @@ public class LogsDataAdapter extends RecyclerView.Adapter<LogsDataAdapter.ViewHo
         TextView snNumber;
         TextView phNumber;
         ImageView status;
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
              snNumber = itemView.findViewById(R.id.logs_data_snNumber);
              phNumber = itemView.findViewById(R.id.logs_data_number);
@@ -134,7 +134,7 @@ public class LogsDataAdapter extends RecyclerView.Adapter<LogsDataAdapter.ViewHo
         context.registerReceiver(sendSMS, new IntentFilter(SENT));
     }
 
-    public void refreshingMessageStatus(int logID) {
+    private void refreshingMessageStatus(int logID) {
         final ArrayList<LogsDataModel> newData = databaseHandler.getCSVData(logID);
         DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(new DiffUtil.Callback() {
             @Override
